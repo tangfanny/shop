@@ -1,0 +1,247 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
+    <script>
+          var userAgentInfo = navigator.userAgent;
+          var Agents = ["Android", "iPhone",
+                      "SymbianOS", "Windows Phone",
+                      "iPad", "iPod"];
+          var flag = true;
+          for (var v = 0; v < Agents.length; v++) {
+              if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                  flag = false;
+                  break;
+              }
+          }
+          var oCss = document.createElement("link"); 
+          oCss.setAttribute("rel", "stylesheet"); 
+          oCss.setAttribute("type", "text/css");
+
+
+      if(flag == true){
+        oCss.setAttribute("href", "http://offline.static.secwk.com/acti/css/index1.css");
+      }else{       
+          oCss.setAttribute("href", "http://offline.static.secwk.com/acti/css/index_m1.css");
+          var oMeta = document.createElement('meta');
+          oMeta.setAttribute('content','width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no');
+          oMeta.setAttribute('name','viewport');
+          document.getElementsByTagName('head')[0].appendChild(oMeta);
+          var Jjs = document.createElement("script");
+          Jjs.setAttribute("type", "text/javascript");
+          Jjs.setAttribute("src", "http://offline.static.secwk.com/acti/js/config.js");
+          document.getElementsByTagName('head')[0].appendChild(Jjs);
+      }
+       document.getElementsByTagName("head")[0].appendChild(oCss);//绑定
+</script>
+    <title>模板</title>
+    <link href="http://offline.static.secwk.com/acti/css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="http://www.secwk.com/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="http://offline.static.secwk.com/acti/js/jquery.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        $.post(
+                "http://mall.secwk.comApp/getShareData",
+                function(datas){
+                    var datas = $.parseJSON(datas);
+                    if(datas.code == 0){
+                        var appId = datas.signPackage.appId;
+                        var timestamp = datas.signPackage.timestamp;
+                        var nonceStr = datas.signPackage.nonceStr;
+                        var signature = datas.signPackage.signature;
+                    }else{
+                        alert("error");
+                    }
+                }
+        );
+
+    </script>
+<script>
+
+  if(flag == false){
+        var title="test";
+        var desc="titlt";
+        var link= "http://mall.secwk.com/zhuanti/huodong/1467009838.html";
+        var imgUrl= "http://offline.img.secwk.com/1465265853292331.jpg";
+
+          wx.config({
+          debug: false,
+          appId: appId,
+          timestamp: timestamp,
+          nonceStr: nonceStr,
+          signature: signature,
+          jsApiList: [
+            // 所有要调用的 API 都要加到这个列表中
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage'
+          ]
+          });
+            wx.ready(function () {
+                  var shareData = {
+                  title: title,
+                  desc: desc,
+                  link: link,
+                  imgUrl: imgUrl
+                  };
+                  wx.onMenuShareAppMessage(shareData);
+                  wx.onMenuShareTimeline(shareData);
+                });
+            wx.error(function (res) {
+                  //alert(res.errMsg);
+            });            
+  }
+</script>
+<style>
+  .adv1{margin-bottom:5px;}
+  .adv3{margin-bottom:5px;}
+  .adv5{margin-bottom:5px;}
+  .adv7{margin-bottom:5px;}
+  .adv9{margin-bottom:5px;}
+  .gotop1{position: fixed;bottom: 10px;right: 10px;z-index: 4;}
+</style>         
+</head>
+<body>
+    <div id="wrap" style="background: #fff;">
+        <a class="banner" href="">
+            <img src="http://offline.img.secwk.com/1465265596288153.png" style="width:100%;">
+            <input type="hidden" name="inid" value="15"/>
+        </a>
+        <div class="mainwrap">
+          <div class="zhuti">
+                                                        <a class="p_s" href="#" style="display:none;"><img src="http://offline.img.secwk.com/1465287409410414.jpg" class="adv adv1" id="fly1" /></a>
+                        <a class="m_s" href=# style="display:none;"><img src="http://offline.img.secwk.com/1465287409410414.jpg" class="adv adv1" id="fly1" /></a>
+                    
+                                                    
+                                            <div class="mxd">
+                                                            <div class="c1">
+                                    <div class="c2">
+                                        <a class="p_s" href="ss" style="display:none;">
+                                          <img src="http://offline.img.secwk.com/1465203599126425.jpg"/>
+                                        </a>
+                                        <a class="m_s" href="ss" style="display:none;">
+                                          <img src="http://offline.img.secwk.com/1465203599126425.jpg"/>
+                                        </a>
+                                    </div>
+                                    <a href="ss" class="c3">ss</a>
+                                    <del>市场价：¥0.00</del>
+                                    <span class="c4"><span>威客价：</span>¥0.00</span>
+                                    <div class="c5">
+                                        <a class="p_s" href="ss" style="display:none;">立即购买</a>
+                                        <a class="m_s" href=ss style="display:none;">立即购买</a>
+                                    </div>
+                                    <span class="icon"></span>
+                                </div>
+                                                        
+                        </div>
+                                                                            <a class="p_s" href="#" style="display:none;"><img src="http://offline.img.secwk.com/1465120319942309.jpg" class="adv adv3" id="fly3" /></a>
+                        <a class="m_s" href=# style="display:none;"><img src="http://offline.img.secwk.com/1465120319942309.jpg" class="adv adv3" id="fly3" /></a>
+                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                            <a class="p_s" href="#" style="display:none;"><img src="http://offline.img.secwk.com/1465114407110786.jpg" class="adv adv9" id="fly9" /></a>
+                        <a class="m_s" href=# style="display:none;"><img src="http://offline.img.secwk.com/1465114407110786.jpg" class="adv adv9" id="fly9" /></a>
+                    
+                                                    
+                                        </div>
+        </div>
+        <div id="temp1" class="fj">
+            <i></i>
+            <div class="c1">
+                            <a href="#fly4" class="fly4">ss</a>
+                            <a href="#fly6" class="fly6">qwffffffffffff</a>
+                            <a href="#fly3" class="fly3">eeeeeeee</a>
+                            <a href="#fly2" class="fly2">ss</a>
+                
+                <p id="gotop"><span></span>回到顶部</p>
+                </div>
+            <img src="http://offline.static.secwk.com/acti/images/img14.png" />
+        </div>
+            <div class="gotop">返回顶部</div>
+    <script>
+        if(flag == false){
+          $(".m_s").css('display','block');
+          $('#temp1').css('display','none');
+          var scrollbox=$(".gotop");
+          scrollbox.css("display","none");
+          $(window).scroll(function()
+          {
+              var top=document.documentElement.scrollTop||document.body.scrollTop;
+              if(top>200)
+              {
+                  scrollbox.fadeIn(800)
+              }
+              else
+              {
+                  scrollbox.fadeOut(800)
+              }
+
+
+          });
+          scrollbox.click(function()
+          {
+              $("html,body").animate({ "scrollTop": 0 },500);
+          });                    
+        }else{
+          $(".p_s").css('display','block');
+          var fj=$(".gotop");
+          var scrollbox=$(".gotop p");
+          fj.css("display","none");
+          // $('.fj').css('display','none');
+          $('.gotop').css('display','none');
+          var fj=$(".fj");
+          var scrollbox=$("#gotop");
+          fj.css("display","none");
+
+          /*锚点*/
+          var clickevent=false;
+          $(".fj .c1>a").click(function()
+          {
+              clickevent=true;
+              $('html,body').animate({ scrollTop: $('#'+this.className).offset().top-20 },800,function()
+              {
+                  clickevent=false;
+              });
+              $(".fj .c1>a").removeClass("select");
+              $(this).addClass("select");
+          })
+
+          var daohang=$(".fj a"),tick
+          $(window).scroll(function()
+          {
+              var top=document.documentElement.scrollTop||document.body.scrollTop;
+              if(top>660)
+              {
+                  fj.fadeIn(800)
+              }
+              else
+              {
+                  fj.fadeOut(800)
+              }
+              if(!clickevent)
+              {
+                  $(".mainwrap").find('.adv').each(function(k,v)
+                  {
+                      if(top>$(v).offset().top-30)
+                      {
+                          daohang.removeClass("select");
+                          daohang.eq(k).addClass("select");
+                      }
+                  });
+              }
+
+          });
+          var zhiding=$("#gotop");
+          zhiding.click(function()
+          {
+              $("html,body").animate({ "scrollTop": 0 },500);
+          });
+
+        }
+    </script>
+               
+    </div> 
+</body>
+</html>

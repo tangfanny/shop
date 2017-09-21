@@ -1,0 +1,61 @@
+#wrap{background:url("../../images/img2.png") repeat;overflow:hidden;}
+/*大图*/
+.mainwrap{width:1120px;margin:0px auto;overflow: hidden;}
+
+
+/*专区*/
+.zq{overflow:hidden;height:420px;padding-left:10px;}
+.zq img{width:353px;display:block;float:left;margin:10px 20px 0 0;transition: all 0.4s ease-out 0s;}
+.zq img:hover{width:363px;transition: all 0.4s ease-out 0s;margin:5px 15px 0 -5px;}
+.zq .c1{margin:10px 0 0 0;}
+.zq .c1:hover{margin:5px 0 0 -5px;}
+
+/*物理*/
+.wl{overflow:hidden;}
+.wl .c1{width:265px;height:400px;background:#fff;float:left;margin:0 20px 20px 0;}
+.wl .c1 .c2{width:265px;height:270px;display:table-cell;vertical-align: middle;text-align:center;}
+.wl .c2 img{transition: all 0.4s ease-out 0s;width: 251px;}
+.wl .c2 img:hover {transition: all 0.4s ease-out 0s;margin-left: -20px;}
+.wl .c3{height:18px;margin:0 10px;font-family: "PingFangSC Regular";font-size:16px;display:block;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;color:#222;}
+.wl .c4{font-size:24px;color:#ff463c;margin:5px 10px;font-family: "PingFangSC Semibold";font-weight: bold;}
+.wl .c4 span{color:#999;font-size:14px;font-weight: normal;}
+.wl .c6{margin:5px 10px 0 10px;overflow:hidden;}
+.wl .c6 span{width:58px;height:18px;border:solid 1px #ff463c;font-size:12px;text-align:center;dislay:block;float:left;color:#ff463c;border-radius: 3px;line-height:18px;margin-right:10px;}
+.wl .c5,.wl .c7{margin:0 10px;}
+.wl .c5 a{background:url("../images/img18.png") no-repeat 80px center; border:solid 1px #d5d5d5;padding-left:30px;}
+.wl .c9 a{background:url("../images/img19.png") no-repeat 80px center;padding-left:40px;}
+.wl .c7 a,.wl .c5 a{display:block;color:#999;font-size:14px;height:30px;line-height:30px;text-align: center;}
+.wl .c7{border:solid 1px #d5d5d5;height:30px;line-height:30px;}
+.wl .c7 a{float:left;width:35%;background:url("../images/img18.png") no-repeat 18px center;padding-left:15%;position: relative;}
+.wl .c7 a.c8{background:url("../images/img19.png") no-repeat 18px center;width:40%;padding-left:10%;}
+.wl .c7 a.c8 span{background:#d5d5d5;width:1px;height:30px;float:left;position:absolute;left:0px;top:0px;}
+.zj{width:1140px;}
+
+/*置顶*/
+.gotop{width:120px;background:#ff4039 url("../images/img20.png") no-repeat center 37px; border-radius:120px;position:fixed;top:50px;right:20px;}
+.gotop .c1{position: absolute;left:-20px;top:80px;}
+.gotop .c2{position:absolute;right:-20px;bottom:32px;}
+.gotop div{margin-top:100px;width:120px;padding-bottom:10px;background:#ff625c;overflow: hidden;
+border-bottom-left-radius: 60px;
+border-bottom-right-radius: 60px;overflow:hidden;}
+.gotop div a{text-align:center;height:45px;line-height:45px;border-bottom:solid 1px #de2f2c;display:block;}
+.gotop div span{display: block;font-size:13px;color:#fff;font-family: "PingFangSC Semibold";margin:0 10px;display:block;}
+.gotop div a.select{background:#ea3c35;}
+.gotop p{background:url("../images/img15.png") no-repeat top center;width:100%;height:30px;margin-top:10px;text-align:center;padding-top:22px;cursor: pointer;}
+.gotop p span{color:#fff;background:#ff4039;border-radius:120px;display:block;width:90px;height:90px;margin:0px auto;line-height:40px;font-size:12px;}
+
+/**当窗口小于1120时*/
+@media all and (max-width:1120px){
+  .mainwrap{width:990px;}
+/*优惠劵*/
+.yhj .c4 {padding-left:8px;}
+.yhj .c1{height:129px;width:207px;margin-right:5px;background-size:240px 129px;}
+.yhj .c2{font-size:40px;}
+/*专区*/
+.zq{height:370px;}
+.zq img{width:310px;}
+.zq img:hover{width:320px;}
+/*物理*/
+.wl .c1{width:232px;}
+
+}

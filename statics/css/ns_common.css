@@ -1,0 +1,159 @@
+
+
+/*select 下拉菜单*/
+.ns-select{border:solid 1px #ddd;cursor: pointer;display: inline-block;font-size: 14px;font-weight: normal;padding:4px;vertical-align: middle}
+/*
+
+/*显示.隐藏*/
+.ns-hide{
+	display: none;
+}
+.ns-show{
+	display: block;
+}
+
+/*Left*/
+.ns-ml-05{
+	margin-left: 5px;
+}
+.ns-ml-10{
+	margin-left: 10px;
+}
+.ns-ml-15{
+	margin-left: 15px;
+}
+.ns-ml-20{
+	margin-left: 15px;
+}
+.ns-ml-25{
+	margin-left: 25px;
+}
+.ns-ml-30{
+	margin-left: 30px;
+}
+
+/*Right*/
+.ns-mr-05{
+	margin-right: 5px;
+}
+.ns-mr-10{
+	margin-right: 10px;
+}
+.ns-mr-15{
+	margin-right: 15px;
+}
+.ns-mr-20{
+	margin-right: 15px !important;
+}
+.ns-mr-22{
+	margin-right: 22px;
+}
+.ns-mr-25{
+	margin-right: 25px;
+}
+.ns-mr-30{
+	margin-right: 30px;
+}
+.ns-mr-35{
+	margin-right: 35px;
+}
+.ns-mr-40{
+	margin-right: 40px !important;
+}
+/*Top*/
+.ns-mt-05{
+	margin-top: 5px;
+}
+.ns-mt-10{
+	margin-top: 10px;
+}
+.ns-mt-15{
+	margin-top: 15px;
+}
+.ns-mt-20{
+	margin-top: 20px;
+}
+.ns-mt-25{
+	margin-top: 25px;
+}
+.ns-mt-30{
+	margin-top: 30px;
+}
+.ns-mt-35{
+	margin-top: 35px;
+}
+/*Bottom*/
+.ns-mb-05{
+	margin-bottom: 5px;
+}
+.ns-mb-10{
+	margin-bottom: 10px;
+}
+.ns-mb-15{
+	margin-bottom: 15px;
+}
+.ns-mb-20{
+	margin-bottom: 20px;
+}
+.ns-mb-25{
+	margin-bottom: 25px;
+}
+.ns-mr-10{
+	margin-right: 10px;
+}
+/*padding*/
+.ns-pg-10{
+	padding:5px 10px;
+}
+.ns-pl-05{
+	padding-left: 05px;
+}
+.ns-pl-10{
+	padding-left: 10px;
+}
+.ns-pr-10{
+	padding-right: 10px;
+}
+.ns-pl-15{
+	padding-left: 15px;
+}
+.ns-pl-20{
+	padding-left: 20px;
+}
+.ns-pl-25{
+	padding-left: 25px;
+}
+.ns-pt-20{
+	padding-top: 20px;
+}
+/*font-size*/
+.ns-ft-50 {
+    font-size: 50px !important;
+}
+.ns-ft-40 {
+    font-size: 40px !important;
+}
+.ns-ft-30 {
+    font-size: 30px !important;
+}
+.ns-ft-20 {
+    font-size: 20px !important;
+}
+.ns-ft-25 {
+    font-size: 25px !important;
+}
+.ns-ft-18 {
+    font-size: 18px !important;
+}
+.ns-ft-16 {
+    font-size: 16px !important;
+}
+.ns-ft-15 {
+    font-size: 15px !important;
+}
+.ns-ft-13 {
+    font-size: 13px !important;
+}
+.ns-ft-14 {
+    font-size: 14px !important;
+}

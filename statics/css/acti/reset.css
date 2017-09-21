@@ -1,0 +1,19 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, table, th, td, button, a { padding: 0; margin: 0; list-style: none; font-family:"宋体"; }
+h1, h2, h3, h4, h5, h6, th, strong { font-weight: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { word-break: break-all; }
+ol, ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; text-align: left; }
+img, button { border: 0px none; }
+a { text-decoration: none;outline:none;}
+a:active {star:expression(this.onFocus=this.blur());}
+:focus { outline:0; }
+button { cursor: pointer; background: white; line-height:normal !important; }
+input, button, select, textarea { outline: none; border-radius: 0px; }
+textarea { resize: none; }
+.cl { float: none !important; clear: both !important; height: 0px !important; _height: 1px !important; line-height: 0px !important; margin: 0px !important; padding: 0px !important; width: 0 !important; border: none !important; overflow: auto !important; zoom: 1; background: none !important; }
+.tl { text-align: left !important; }
+.tr { text-align: right !important; }
+.fl { float: left; }
+.fr { float: right!important; }
+.alpha01 { filter: alpha(opacity=1); opacity: 0.1; background: white; }

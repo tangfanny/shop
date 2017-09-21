@@ -1,0 +1,54 @@
+#wrap{overflow:hidden;}
+/*大图*/
+.banner{height:660px;}
+.mainwrap{width:1120px;margin:0px auto;}
+
+
+
+/*广告*/
+
+.adv{width:100%;}
+.adv1{margin:30px 0 20px 0;}
+/*万万没想到*/
+#wrap h2.w{margin-bottom:40px;}
+.mxd{overflow:hidden;width:1128px;}
+.mxd .c1{width:272px;overflow:hidden;background:#fff;float:left;position:relative;margin:0 10px 10px 0;}
+.mxd .c2{width:272px;height:240px;display:table-cell;text-align: center;vertical-align:middle;}
+.mxd .c2 img{transition:all 0.4s ease-out 0s;width: 251px;}
+.mxd .c2 img:hover{transition:all 0.4s ease-out 0s;margin-left:-20px;}
+.mxd .c3{height:40px;line-height:20px;font-size:14px;font-family:"冬青黑体简体中文";color:#343233;margin:0 10px;display:block;}
+.mxd del{font-family: "PingFangSC Regular";font-size:14px;color:#757575;margin:5px 10px;display:block;}
+.mxd .c4{font-size:30px;color:#ff5900;font-family: "PingFangSC Regular";margin:0 10px 5px 10px;display:block;}
+.mxd .c4 span{font-size:14px;}
+.mxd .c5{height:40px;overflow: hidden;width:272px;display:table-cell;}
+.mxd .c5 a{background:#ff5900;text-align:center;display:block;line-height:40px;color:#fff;font-size:18px;font-family: "冬青黑体简体中文";width:100%;}
+.mxd .c1 .icon{display:block;position:absolute;z-index:2;}
+.mxd .c6{padding:0 10px;height:40px;}
+.mxd .c6 a{width:118px;height:28px;border:dotted 1px #fc5a1f;line-height:28px;text-align:center;color:#fc5a1f;font-size:14px;display:block;float:left;}
+.mxd .c6 a.c7{background:#fc5a1f;color:#fff;float:right;}
+/*双十一*/
+.ssy .icon{width:104px;height:42px;background:url("../images/img9.png") no-repeat;top:3px;left:0px;}
+/*品牌大促*/
+.ppdc .icon{width:42px;height:70px;background:url("../images/img10.png") no-repeat;top:0px;right:10px;}
+/*年度优惠*/
+.ndyh .icon{width: 41px;height:51px;background:url("../images/img11.png") no-repeat;top:10px;right:10px;}
+
+/*飞机*/
+.fj{width:114px;height:500px;background: url("../images/img12.png") no-repeat top center;position:fixed;right:20px;top:70px;z-index:3;}
+.fj i{width:1px;height:85px;background:#fa6121;margin:0px auto;display:block;margin-top:92px;}
+.fj .c1{width:114px;background:#fa6121;overflow:hidden;}
+.fj .c1 a{display:block;width:76px;height:26px;line-height:26px;color:#fff;font-size:14px;text-align:center;font-family:"冬青黑体简体中文";margin:20px auto;}
+.fj .c1>a:hover,.fj .c1>a.select{background:#af4417;}
+.fj .c1 #gotop {color:#fff;font-family:"宋体";font-size:14px;text-align:center;background:url("../images/img13.png") no-repeat top center;padding-top:20px;margin:10px 0;cursor: pointer;}
+.fj img{display: block;}
+
+/**当窗口小于1120时*/
+@media all and (max-width:1120px){
+  .mainwrap{width:990px;}
+/*优惠劵*/
+.yhj div{width:323px;}
+.yhj div.c4{margin:0 10px;}
+/*万万没想到*/
+.mxd .c1{width:240px;}
+
+}

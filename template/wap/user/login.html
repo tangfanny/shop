@@ -1,0 +1,49 @@
+{template header}
+    <div class="main">
+		<div class="login">
+            <input type="hidden" name="url_forward" value="{$_GET[url_forward]}"/>
+			<input type="hidden" name="wechat_openid" value="{$_GET[wechat_openid]}"/>
+        	<ul>
+            	<li>
+                	<input type="text" name="account" placeholder="用户名/手机号/邮箱" class="input_3" />
+                </li>
+                <li>
+                	<input type="password" name="password" placeholder="密码" class="input_3" />
+                </li>
+            </ul>
+            <div class="mar15">
+            	<input type="button" onclick="dosubmit();" value="登录" class="btnBlue" />
+                {if getconfig('reg_isreg') == 1}
+                    <a href='{U('user/public/reg')}'><input type="button" value="还没有账号？注册" class="btnPink mt10" /></a>
+                {else}
+                    <a href='javascript:;'><input type="button" value="注册已关闭" class="btnPink mt10" /></a>
+                {/if}
+            	<div class="jiz clearfix">
+					<p><label><input type="checkbox" name="cookie" value="1" /> 记住登录</label></p>
+					<span><a href="{U('user/public/repwd')}">忘记密码？</a></span>
+				</div>
+			</div>			
+        </div>
+    </div>
+{template footer}
+<script type="text/javascript">
+function dosubmit() {
+    $.post("{U('user/api/login_wap')}",{
+        url_forward:$('input[name="url_forward"]').val(),
+		wechat_openid:$('input[name="wechat_openid"]').val(),
+        account:$('input[name="account"]').val(),
+        password:$('input[name="password"]').val(),
+        cookie:$('input[name="cookie"]').val()
+    },function(data) {
+        if (data.status==1) {
+            alert(data.info);
+            window.location.href = data.url;
+        } else {
+            alert(data.info);
+        }
+    },'JSON');
+}
+setTitle('登录');
+</script>
+</body>
+</html>
